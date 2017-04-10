@@ -1,6 +1,6 @@
 # Sorting-Algorithm
 
-Include some common sorting algorithms implemented in C++ :
+Include some common sorting algorithms implemented in C++/Python :
 
 Time complexity O(n^2) : Selection Sort, Bubble Sort, Insertion Sort...
 Time complexity O(nlogn) : Merge Sort, Quick Sort , Heap Sort...
