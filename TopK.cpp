@@ -1,3 +1,21 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+using namespace std;
+int partition(vector<int> &A,int start,int end)
+{
+    int pivot = A[end];
+    int pindex = start;
+    for(int i = start; i < end ;i++){
+        if(A[i] >= pivot){
+            swap(A[i],A[pindex]);
+            pindex++;
+        }
+    }
+    swap(A[pindex],A[end]);
+    return pindex;
+}
 int TopK(vector<int> &data,int start,int end, int K){
     int pIndex = partition(data, start, end);
     if(pIndex - start == K - 1) {
